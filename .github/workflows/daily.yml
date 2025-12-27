@@ -4,7 +4,6 @@ on:
     # 08:00 UTC = 13:30 IST
     - cron: "0 8 * * *"
   workflow_dispatch:
-
 concurrency:
   group: daily-docker-1-${{ github.ref }}
   cancel-in-progress: false
